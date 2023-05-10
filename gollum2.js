@@ -5,7 +5,7 @@ const { ethers } = require('ethers');
 const bot = new TelegramBot(process.env.TELEGRAM_BOT_KEY, { polling: true });
 
 
-const provider = new ethers.InfuraProvider('mainnet', process.env.INFURA_KEY);
+const provider = new ethers.providers.InfuraProvider('mainnet', process.env.INFURA_KEY);
 
 
 const gasPriceLevel = {
